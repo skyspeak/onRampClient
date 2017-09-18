@@ -1,0 +1,26 @@
+<div class="row">
+
+  <div class="col-md-6 col-md-offset-3">
+    <div class="form-error alert-danger">
+      
+    </div>
+    <form (submit)="userLogin()">
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" [(ngModel)]="email"name="email" id="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" [(ngModel)]="password" id="password" name="password">
+      </div>
+
+      <button type="submit" class="btn btn-default btn-block">Login</button>
+
+    </form>
+
+  </div>
+
+
+
+</div>

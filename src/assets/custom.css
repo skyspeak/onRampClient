@@ -1,0 +1,150 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 16px;
+    line-height: 1.66; */
+}
+
+.thumbnail-container >img {
+  width: 100%;
+    height: 250px;
+    min-height: 250px;
+
+}
+
+.project-edge {
+    padding: 0px;
+    margin: 0;
+    
+    border: 1px solid rgba(175, 175, 175, 0.34);
+    margin-bottom: 20px;
+}
+
+.project-edge > .col-md-4 , .project-edge
+ > .col-md-8 {
+    padding: 0;
+}
+
+.project-edge .project-info {
+    padding: 24px;
+}
+
+.project-title h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.row.projectParts {
+    margin:0;
+    margin-top: 30px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.row.projectParts h3.title{    
+    margin: 24px auto !important;
+
+    color: black;
+}
+
+.card {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.49);
+    padding: 15px;
+    margin: 24px auto;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    -webkit-transition: box-shadow .4s ease-in-out;
+    -moz-transition: box-shadow .4s ease-in-out;
+    -ms-transition: box-shadow .4s ease-in-out;
+    -o-transition: box-shadow .4s ease-in-out;
+    transition: box-shadow .4s ease-in-out;
+    cursor: pointer;
+}
+
+div#toggle--header a {
+    color: black;
+    font-size: 1.25em;
+    display: block;
+    width: 100%;    
+    text-decoration: none;
+
+}
+
+.assignments a.list-group-item i.fa {
+    margin-right: 10px;
+    color: black;
+}
+
+div#toggle- span.part-description {
+    display: block;
+    margin-bottom: 12px !important;
+    margin-top: 12px !important;
+}
+
+
+
+
+ .container-styled {
+    /* border: 1px solid rgba(132, 132, 132, 0.25);
+    padding: 50px; */
+    margin:20px auto;
+} 
+
+div#toggle- {
+    border-top: 1px solid black;
+    margin-top: 12px;
+}
+
+.gifLoader {
+    display: flex;
+}
+
+.gifLoader img {
+    margin: 0 auto;
+}
+
+a.btn.btn-default {
+    background: green;
+}
+
+
+button.btn.btn-default {
+    background: green;
+}
+
+nav.navbar.navbar-inverse {
+    background: green;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    background: rgb(4, 88, 4);
+}
+
+
+p.assignmentHighlighter {
+    font-weight: bolder;
+    margin: 24px auto;
+}
+
+
+.text-muted{
+    color:#b4bcc2 !important;
+}
+
+ul.submissionAssignmentsList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.submissionAssignmentsList .disabled {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.completionStatus {
+    font-weight: bold;
+    color: red;
+    margin: 24px auto;
+}

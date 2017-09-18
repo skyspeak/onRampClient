@@ -1,0 +1,21 @@
+<div class="container-fluid ifHero">
+
+<section class="hero container-fluid">
+
+    <div class="hero-section">
+      <div class="hero-text">
+        <h1>Welcome to  onRamp</h1>
+        <p>One stop platform for intership training</p>
+        <div class="hero-buttons">
+          <button [routerLink] = "['/projects'] "type="button" class="btn btn-cutom">Discover</button>
+          <button *ngIf="!authService.isLoggedIn()"  [routerLink] = "['/register']" type="button" class="btn btn-custom-outline">Sign Up</button>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="../../assets/images/hero.jpg" alt="">
+      </div>
+    </div>
+
+</section>
+
+</div>

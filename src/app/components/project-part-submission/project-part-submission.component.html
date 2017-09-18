@@ -1,0 +1,47 @@
+<div class="container-fliud">
+
+  <div class="container container-styled">
+
+    <div class="gifLoader">
+    <img *ngIf="!ifLoaded" src="{{loaderGIF}}" alt="">
+    </div>
+    <div class="row" *ngIf="ifLoaded">
+
+      <div class="col-md-12">
+
+        <div class="part-description">
+          <h1 class="task-name">{{task.task_name}}</h1>
+          <p class="task-details" innerHtml="{{task.task_details}}"></p>
+        </div>
+        <form class="submission" (submit)="submitTask()">
+          <div class="form-group">
+
+            <label for="">Link</label>
+            <input type="text" name="link" [(ngModel)]="link" value="" class="form-control" required pattern="https?://.+">
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="">Comments</label>
+            <textarea rows="10" cols="10" class="form-control" name="comment" [(ngModel)]="comment"></textarea>
+
+          </div>
+
+          <div class="form-group">
+
+            <a class="btn btn-default pull-left" [routerLink]="['/project/learn/',task.project_id]">Back to Project</a>
+            <button class="btn btn-default pull-right" type="submit">Submit Task</button>
+
+          </div>
+
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>

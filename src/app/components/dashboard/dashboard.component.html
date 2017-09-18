@@ -1,0 +1,32 @@
+<div class="container-fliud">
+
+  <div class="container container-styled">
+        <div class="gifLoader">
+    <img *ngIf="!ifLoaded" src="{{loaderGIF}}" alt="">
+    </div>
+
+
+    <div class="row project-listing"  *ngIf="ifLoaded">
+      <h1>My Enrolled Projects</h1>
+      <p id="noProject" *ngIf="!hasProject">You are not enrolled in any project.<a [routerLink]="['/projects']"> Find Projects</a> </p>
+      <div class="col-md-3" *ngFor="let project of projects">
+
+        <div class="dash-course">
+          <div class="thumb">
+            <a class="img-linker" [routerLink]="['/project/learn/',project.data[0].id]"><img src="{{project.data[0].thumb}}" alt=""></a>
+          </div>
+          <div class="info">
+            <a [routerLink]="['/project/learn/',project.data[0].id]">
+              <p class="dash-title">{{project.data[0].name}}</p>
+            </a>
+            <p class="cat">{{project.data[0].fields}}</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+</div>

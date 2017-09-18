@@ -1,0 +1,38 @@
+
+
+/* 
+ 
+.container-styled {
+     border: 1px solid rgba(132, 132, 132, 0.25); 
+    padding: 50px;
+    margin:20px auto;
+}  */
+
+.project-title h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.row.projectParts {
+    margin: 0;
+    margin-top: 30px;
+    border: 1px solid rgba(175, 175, 175, 0.34);
+    padding: 20px;
+}
+
+.row.projectParts h3.title{    margin: 0;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.enroll {
+    margin:24px auto;
+}
+
+
+.enroll .btn {
+    padding: 15px;
+    width: 160px;
+}

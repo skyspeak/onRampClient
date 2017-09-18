@@ -1,0 +1,41 @@
+<div class="container-fliud">
+
+  <div class="container container-styled">
+    <div class="gifLoader">
+    <img *ngIf="!ifLoaded" src="{{loaderGIF}}" alt="">
+    </div>
+    <div class="row" *ngIf="ifLoaded">
+
+
+      <div class="col-md-4" *ngFor="let project of projects">
+
+        <div class="dash-course row">
+          <div class="thumb">
+            <a class="img-linker" [routerLink]="['/project/',project.id]"><img src="{{project.thumb}}" alt=""></a>
+          </div>
+          <div class="info">
+            <a [routerLink]="['/project',project.id]">
+              <h3 id="projectHeader">{{project.name}}</h3>
+            </a>
+            <div class="info-des">
+              <div class="description" innerHtml="{{project.description}}">
+                
+              </div>
+              <div class="enroll pull-right">
+                <button class="btn btn-default" [routerLink]="['/project',project.id]">View Project</button>
+                <!-- <a class="btn btn-default" >View</a> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+  
+
+
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,54 @@
+section.hero.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-text {
+    position: absolute;
+    color: white;
+}
+
+.hero-img >img {
+    width: 100%;
+    max-height: calc(90vh + 5px);
+}
+
+
+.container-fluid.ifHero {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-top: -22px !important;
+}
+
+.hero-text {
+    top: 40%;
+    left: 10%;
+}
+
+.hero-text > h1 {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.hero-text > p {
+    margin-bottom: 21px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.hero-buttons > button:last-child {
+    margin-left: 20px;
+}
+
+button.btn.btn-cutom {
+    background: #18bc9c;
+    width: 150px;
+    font-weight: bold;
+}
+
+button.btn.btn-custom-outline {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #18bc9c;
+    width: 150px;
+    font-weight: bold;
+}

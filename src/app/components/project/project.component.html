@@ -1,0 +1,73 @@
+<div class="container-fliud">
+
+
+
+  <div class="container container-styled">
+
+    <div class="gifLoader">
+      <img *ngIf="!ifLoaded" src="{{loaderGIF}}" alt="">
+    </div>
+    <div class="row" *ngIf="ifLoaded">
+
+      <div class="col-md-12">
+
+        <div class="row project-edge">
+          <div class="col-md-4">
+            <div class="thumbnail-container">
+              <img src="{{projectData.project_thumb}}" alt="">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="project-info">
+              <div class="project-title">
+                <h3>{{projectData.project_name}}</h3>
+              </div>
+              <div class="description" innerHtml="{{projectData.project_shortDescription}}">
+
+              </div>
+              <div class="enroll pull-left">
+                <!-- <button class="btn btn-default" type="">Enroll</button> -->
+                <a *ngIf="userService.isLoggedIn()" class="btn btn-default" (click)="enrollProject()">Enroll</a>
+                <a *ngIf="!userService.isLoggedIn()" class="btn btn-default" [routerLink]="['/login']">Login to Enroll</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    <div class="row">
+
+
+      <div class="col-md-12">
+
+        <div class="row projectParts">
+          <h3 class="title">Project Description</h3>
+          <div class="description" innerHtml="{{projectData.project_description}}"></div>
+          <h3 class="title">Project Curriculum</h3>
+
+          <ngb-accordion #acc="ngbAccordion" class="desmon" *ngFor="let part of projectParts;let x = index">
+
+            <ngb-panel id="toggle-{{index}}" title="{{part.part_name}}">
+              <ng-template ngbPanelContent>
+                <span class="part-description" innerHtml="{{part.part_description}}"></span>
+              </ng-template>
+            </ngb-panel>
+
+          </ngb-accordion>
+
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+    </div>
+
+  </div>
+</div>

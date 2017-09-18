@@ -1,0 +1,42 @@
+
+.dash-course {
+    border: 1px solid black;
+    /* padding: 5px; */
+    margin-bottom: 10px;
+}
+
+.dash-course .thumb .img-linker>img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height:200px;
+    max-height: 200px;
+}
+
+.dash-course .info {
+    padding: 5px;
+}
+
+.dash-course p.dash-title {
+    font-weight: bolder;
+    color: black;
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+.dash-course p.cat {
+    font-size: 0.9em;
+    color: rgba(128, 128, 128, 0.6);
+}
+
+
+.project-listing h1 {
+    padding-left: 15px;
+    margin: 20px auto;
+    margin-top: 0;
+    padding-right: 15px;
+}
+
+p#noProject {
+    margin-left: 15px;
+}
